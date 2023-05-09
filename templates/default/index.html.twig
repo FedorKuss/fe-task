@@ -1,0 +1,26 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+	<header>
+		<nav>
+			<ul class="menuItems" id="menuItems">
+				<li>
+					<a href="?category=all" data-category="all">All</a>
+				</li>
+				<li>
+					<a href="?category=abstract" data-category="abstract">Abstract</a>
+				</li>
+				<li>
+					<a href="?category=cars" data-category="cars">Cars</a>
+				</li>
+				<li>
+					<a href="?category=nature" data-category="nature">Nature</a>
+				</li>
+			</ul>
+		</nav>
+	</header>
+
+	<main>
+		<section id="wallpapers" class="wallpapers"></section>
+	</main>
+{% endblock %}
